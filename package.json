@@ -1,0 +1,59 @@
+{
+  "name": "firecrawl-discord-bot",
+  "version": "1.0.0",
+  "description": "Firecrawl Discord Bot to turn websites into LLM-ready data",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@mendable/firecrawl-js": "^1.23.9",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint": "^8.57.0",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@10.5.2",
+  "keywords": [
+    "firecrawl",
+    "scrape",
+    "sideguide",
+    "mendable",
+    "discord",
+    "bot",
+    "crawler",
+    "web",
+    "scraper"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.firecrawl.dev",
+  "author": {
+    "name": "Ademílson Tonato",
+    "email": "ademilsonft@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mendableai/firecrawl-discord-bot.git"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
