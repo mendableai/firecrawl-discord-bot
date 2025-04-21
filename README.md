@@ -2,6 +2,8 @@
 
 A Discord bot to turn websites into LLM-ready data using the Firecrawl API.
 
+🔥 _Add Firecrawl Bot to your channel_ - https://firecrawl.link/discord-bot
+
 ## Features
 
 - Scrape websites with advanced options
